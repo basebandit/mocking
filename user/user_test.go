@@ -37,7 +37,6 @@ func TestUseReturnsErrorFromDo(t *testing.T) {
 	err := testUser.Use()
 
 	if err != dummyError{
-		
+		t.Fail()
 	}
-
 }
